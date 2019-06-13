@@ -1,5 +1,6 @@
 ---
 title: "Let's Taco about it!"
-image: "./cover.jpg"
+image: ../images/cover.jpg
 description: "A game of taco fights!"
+link: "http://taco-battle.herokuapp.com/"
 ---
