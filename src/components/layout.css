@@ -1,0 +1,143 @@
+:root {
+  --mainBrown: #2d1e1f;
+  --mainYellow: #ff9e09;
+  --mainGray: #ece8dc;
+  --mainWhite: #fff;
+  --mainDark: #222;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
+
+.default-background,
+.about-background {
+  content: "";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.default-background:hover,
+.about-background:hover {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.about-background {
+  min-height: 100vh;
+}
+
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
+}
+
+.footer {
+  background: var(--mainBrown);
+}
+
+.menu,
+.contact {
+  background: var(--mainGray);
+}
+
+.col-text {
+  height: 20em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group: -1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 60%;
+}
+.col-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    order: vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+  }
+}
