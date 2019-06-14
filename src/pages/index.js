@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
       query={query}
       render={data => {
         return (
-          <section className="py-5 contact">
+          <section id="contact" className="py-5 contact">
             <div className="container">
               <div className="row">
                 {data.contacts.edges.map(({ node: contact }) => {

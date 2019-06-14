@@ -6,6 +6,10 @@
   --mainDark: #222;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--mainWhite);
   color: var(--mainDark);

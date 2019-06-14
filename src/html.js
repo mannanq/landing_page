@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" /> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -29,6 +30,11 @@ export default function HTML(props) {
             __html: `
             var name = 'world';
             console.log('Hello ' + name);
+            window.scroll({
+              top: 2500,
+              left: 0,
+              behavior: 'smooth'
+            });
         `,
           }}
         />
