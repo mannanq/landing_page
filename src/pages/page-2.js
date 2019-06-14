@@ -48,7 +48,9 @@ export const query = graphql`
         }
       }
     }
-    projects: allMarkdownRemark {
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { eq: "project" } } }
+    ) {
       edges {
         node {
           id
