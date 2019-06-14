@@ -9,6 +9,7 @@ export default function Project({ project, fluid }) {
         <Img fluid={fluid} className="card-img-top" />
         <div className="card-body text-center">
           <h6>{project.frontmatter.title}</h6>
+          <h6>{project.frontmatter.description}</h6>
         </div>
 
         <a
@@ -16,6 +17,12 @@ export default function Project({ project, fluid }) {
           className="btn btn-yellow mt-3 text-capitalize"
         >
           See Demo
+        </a>
+        <a
+          href={project.frontmatter.git}
+          className=" btn btn-yellow text-capitalize mt-2"
+        >
+          See on GitHub
         </a>
       </div>
     </div>

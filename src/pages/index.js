@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
       query={query}
       render={data => {
         return (
-          <section id="contact" className="py-5 contact">
+          <section id="contact" className="py-5 contact revealer">
             <div className="container">
               <div className="row">
                 {data.contacts.edges.map(({ node: contact }) => {
@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "cover.jpg" }) {
+    img: file(relativePath: { eq: "background.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

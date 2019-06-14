@@ -28,12 +28,23 @@ export default function HTML(props) {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            var name = 'world';
-            console.log('Hello ' + name);
-            window.scroll({
-              top: 2500,
-              left: 0,
-              behavior: 'smooth'
+            document.addEventListener("DOMContentLoaded", function() {
+           // code...
+            
+           var name = 'world';
+           console.log('Hello ' + name);
+           window.scroll({
+             top: 2500,
+             left: 0,
+             behavior: 'smooth'
+           });       
+            
+            setTimeout(function() {
+              document.getElementById("main").removeClass("is-loading");
+            }, 100)
+
+
+
             });
         `,
           }}

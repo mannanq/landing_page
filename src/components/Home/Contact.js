@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 
 export default function Contact({ contact, fixed }) {
   return (
-    <div className="col-sm-12 col-lg-4 my-3">
+    <div className="col-sm-12 col-lg-4 my-3 revealme">
       <div className="card text-center">
         <Img fixed={fixed} className="icon" />
         <div className="container  align-items-center justify-content-center">

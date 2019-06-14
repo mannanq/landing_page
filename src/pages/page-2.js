@@ -41,7 +41,7 @@ const SecondPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "cover.jpg" }) {
+    img: file(relativePath: { eq: "projects.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -58,6 +58,7 @@ export const query = graphql`
             title
             description
             link
+            git
             image {
               childImageSharp {
                 fluid(maxWidth: 300) {
