@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.svg"
+import globe from "../../images/globe.svg"
 // import { FaCartArrowDown } from "react-icons/fa"
 
 export default class Navbar extends Component {
@@ -42,7 +42,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar fixed-top navbar-expand-sm bg-light navbar-light">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="logo" />
+          <img src={globe} alt="logo" />
           {/* Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> */}
         </Link>
         {/* toggle icon functionality */}
