@@ -39,9 +39,9 @@ export default function HTML(props) {
              behavior: 'smooth'
            });       
             
-            setTimeout(function() {
-              document.getElementById("main").removeClass("is-loading");
-            }, 100)
+            // setTimeout(function() {
+            //   document.getElementById("main").removeClass("is-loading");
+            // }, 100)
 
 
 
